@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# pnpm
+pnpm-debug.log*
+
+# npm
+npm-debug.log*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/

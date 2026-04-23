@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JWT Signing Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <button id="theme-toggle" type="button" aria-label="Toggle theme">☀️</button>
+    <h1>JWT Signing Tool</h1>
+
+    <div class="input-group">
+      <label for="json-input">JSON Payload</label>
+      <button id="now-btn" type="button">Now</button>
+      <textarea id="json-input" rows="8" placeholder="Enter JSON payload..."></textarea>
+      <div id="json-error" role="alert"></div>
+    </div>
+
+    <div class="input-group">
+      <label for="pem-input">RSA Private Key (PEM)</label>
+      <textarea id="pem-input" rows="12" placeholder="Enter PEM-encoded RSA private key..."></textarea>
+    </div>
+
+    <button id="sign-button" type="button">Sign</button>
+    <button id="public-jwk-btn" type="button">Public JWK</button>
+    <button id="public-pem-btn" type="button">Public PEM</button>
+
+    <div id="error-display" role="alert"></div>
+
+    <label for="jwt-output">JWT Output</label>
+    <pre id="jwt-output"></pre>
+
+    <label for="pubkey-output">Public Key Output</label>
+    <pre id="pubkey-output"></pre>
+
+    <a id="jwt-io-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">Decode on jwt.io (paste public key to verify)</a>
+  </main>
+
+  <script defer src="app.js"></script>
+</body>
+</html>
