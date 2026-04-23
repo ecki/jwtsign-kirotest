@@ -6,9 +6,7 @@ This is a test project by **Bernd Eckenfels**, created with [Kiro](https://kiro.
 
 ## Live Demo
 
-If hosted on GitHub Pages, open the raw HTML directly:
-
-[**Open JWT Signing Tool**](https://ecki.github.io/jwtsign-kirotest/index.html)
+[**Open JWT Signing Tool**](https://ecki.github.io/jwtsign-kirotest/)
 
 
 ## Features
@@ -17,7 +15,7 @@ If hosted on GitHub Pages, open the raw HTML directly:
 - Public key export as JWK or SPKI PEM
 - "Now" button to set `iat` claim to current Unix timestamp
 - Click-to-select on output fields for easy copy/paste
-- "Verify on jwt.io" link when both token and public key are available
+- "Decode on jwt.io" link to inspect the token (paste public key to verify signature)
 - Dark/light mode toggle (dark by default)
 - Pre-filled sample payload and RSA key for quick testing
 - Works from `file://` protocol — no server required
