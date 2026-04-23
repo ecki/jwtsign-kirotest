@@ -20,7 +20,7 @@
 
     <div class="input-group">
       <label for="pem-input">RSA Private Key (PEM)</label>
-      <textarea id="pem-input" rows="12" placeholder="Enter PEM-encoded RSA private key..."></textarea>
+      <textarea id="pem-input" rows="8" placeholder="Enter PEM-encoded RSA private key..."></textarea>
     </div>
 
     <button id="sign-button" type="button">Sign</button>
@@ -37,6 +37,10 @@
 
     <a id="jwt-io-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">Decode on jwt.io (paste public key to verify)</a>
   </main>
+
+  <footer>
+    <p>By Bernd Eckenfels · <a href="https://github.com/ecki/jwtsign-kirotest" target="_blank" rel="noopener noreferrer">GitHub</a> · MIT License</p>
+  </footer>
 
   <script defer src="app.js"></script>
 </body>
