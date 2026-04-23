@@ -292,3 +292,15 @@ This document defines the requirements for a single-page JWT signing tool. The t
 4. THE workflow SHALL use `pnpm/action-setup@v4` to install pnpm
 5. THE workflow SHALL use `actions/checkout@v4` for repository checkout
 6. THE workflow SHALL use `actions/setup-node@v4` for Node.js setup
+
+
+### Requirement 23: Git Commit Hash in Footer
+
+**User Story:** As a user, I want to see which version of the tool I'm using, so that I can report issues against a specific build.
+
+#### Acceptance Criteria
+
+1. THE footer in `index.html` SHALL contain a placeholder string `XXXXXX` representing the git commit hash
+2. WHEN the CD_Workflow deploys to GitHub Pages, it SHALL replace the `XXXXXX` placeholder in the deployed `index.html` with the short git commit hash (7 characters) of the source commit
+3. THE replacement SHALL occur only in the deployed copy — the source `index.html` in the repository SHALL always contain the `XXXXXX` placeholder
+4. WHEN viewing the page locally (from source), the footer SHALL display `XXXXXX` as-is

@@ -170,3 +170,10 @@
 
 - [x] 26.1 Validate the workflow YAML syntax by checking it is well-formed (e.g., using `pnpm exec yaml` or manual review)
 - [x] 26.2 Verify the workflow file contains both `test` and `deploy` jobs with the correct triggers, conditions, and dependencies
+
+
+## Task 27: Git Commit Hash in Footer
+
+- [ ] 27.1 Update the `<footer>` in `index.html` to include the `XXXXXX` placeholder after the existing content (e.g., `· XXXXXX`)
+- [ ] 27.2 In `.github/workflows/ci.yml`, add a step in the `deploy` job (after checkout, before the gh-pages action) that runs `sed -i "s/XXXXXX/$(git rev-parse --short HEAD)/g" _site/index.html` to replace the placeholder with the actual short commit hash
+- [ ] 27.3 Verify the replacement only affects the `_site/` copy, not the source `index.html`
