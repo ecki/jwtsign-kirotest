@@ -174,6 +174,6 @@
 
 ## Task 27: Git Commit Hash in Footer
 
-- [ ] 27.1 Update the `<footer>` in `index.html` to include the `XXXXXX` placeholder after the existing content (e.g., `· XXXXXX`)
-- [ ] 27.2 In `.github/workflows/ci.yml`, add a step in the `deploy` job (after checkout, before the gh-pages action) that runs `sed -i "s/XXXXXX/$(git rev-parse --short HEAD)/g" _site/index.html` to replace the placeholder with the actual short commit hash
-- [ ] 27.3 Verify the replacement only affects the `_site/` copy, not the source `index.html`
+- [x] 27.1 Update the `<footer>` in `index.html` to include the `XXXXXX` placeholder after the existing content (e.g., `· XXXXXX`)
+- [x] 27.2 In `.github/workflows/ci.yml`, add a step in the `deploy` job (after checkout, before the gh-pages action) that runs `sed -i "s/XXXXXX/$(git rev-parse --short HEAD)/g" _site/index.html` to replace the placeholder with the actual short commit hash
+- [x] 27.3 Verify the replacement only affects the `_site/` copy, not the source `index.html`
