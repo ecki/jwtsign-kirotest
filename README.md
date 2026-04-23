@@ -68,9 +68,10 @@ pnpm dlx serve .
 index.html        — page structure
 app.js            — all application logic (signing, export, UI wiring)
 style.css         — theming via CSS custom properties (dark/light)
-app.test.js       — 14 property-based tests (vitest + fast-check)
-vitest.config.js
-package.json
+app.test.js       — property-based tests (vitest + fast-check)
+vitest.config.js  — test runner config
+package.json      — project metadata and dev dependencies
+.github/          — GitHub Actions CI/CD workflow
 .kiro/            — Kiro spec documents (requirements, design, tasks)
 ```
 
