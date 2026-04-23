@@ -35,6 +35,15 @@ Or with OpenSSL:
 openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048
 ```
 
+## CI/CD
+
+A GitHub Actions workflow (`.github/workflows/ci.yml`) runs on every push and pull request:
+
+- **Test job** — installs dependencies and runs `pnpm test`
+- **Deploy job** — on pushes to `main` only, deploys the static site to the `gh-pages` branch for GitHub Pages
+
+All actions are pinned to full commit SHAs and token permissions are explicitly scoped per job.
+
 ## Build & Test
 
 Prerequisites: [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/).
